@@ -1,0 +1,252 @@
+{
+  "mutations": [
+    {
+      "baseline": "product_baseline.html",
+      "category": "breaking",
+      "expected_fields": [
+        "price"
+      ],
+      "expected_kinds": [
+        "value-changed"
+      ],
+      "file": "product_b1_renamed_class.html",
+      "id": "PB1",
+      "label": "renamed class (price -> cost); extractor falls through to the related item price",
+      "page": "product",
+      "silent": true
+    },
+    {
+      "baseline": "product_baseline.html",
+      "category": "breaking",
+      "expected_fields": [
+        "stock"
+      ],
+      "expected_kinds": [
+        "missing"
+      ],
+      "file": "product_b2_moved_node.html",
+      "id": "PB2",
+      "label": "stock node moved out of its container scope",
+      "page": "product",
+      "silent": false
+    },
+    {
+      "baseline": "product_baseline.html",
+      "category": "breaking",
+      "expected_fields": [
+        "release_date"
+      ],
+      "expected_kinds": [
+        "missing"
+      ],
+      "file": "product_b3_removed_field.html",
+      "id": "PB3",
+      "label": "release date field removed",
+      "page": "product",
+      "silent": false
+    },
+    {
+      "baseline": "product_baseline.html",
+      "category": "breaking",
+      "expected_fields": [
+        "price"
+      ],
+      "expected_kinds": [
+        "format-changed"
+      ],
+      "file": "product_b4_price_format.html",
+      "id": "PB4",
+      "label": "price format change ($1,299.00 -> 1.299 EUR-style)",
+      "page": "product",
+      "silent": false
+    },
+    {
+      "baseline": "product_baseline.html",
+      "category": "breaking",
+      "expected_fields": [
+        "release_date"
+      ],
+      "expected_kinds": [
+        "format-changed"
+      ],
+      "file": "product_b5_date_locale.html",
+      "id": "PB5",
+      "label": "date locale swap (ISO -> DD/MM/YYYY)",
+      "page": "product",
+      "silent": false
+    },
+    {
+      "baseline": "product_baseline.html",
+      "category": "breaking",
+      "expected_fields": [
+        "price"
+      ],
+      "expected_kinds": [
+        "value-changed"
+      ],
+      "file": "product_b6_silent_price_move.html",
+      "id": "PB6",
+      "label": "price node moved after related items (extractor returns the $499 related price)",
+      "page": "product",
+      "silent": true
+    },
+    {
+      "baseline": "product_baseline.html",
+      "category": "cosmetic",
+      "expected_fields": [],
+      "expected_kinds": [],
+      "file": "product_c1_whitespace.html",
+      "id": "PC1",
+      "label": "whitespace and indentation only",
+      "page": "product",
+      "silent": false
+    },
+    {
+      "baseline": "product_baseline.html",
+      "category": "cosmetic",
+      "expected_fields": [],
+      "expected_kinds": [],
+      "file": "product_c2_unrelated_copy.html",
+      "id": "PC2",
+      "label": "unrelated marketing copy edit",
+      "page": "product",
+      "silent": false
+    },
+    {
+      "baseline": "product_baseline.html",
+      "category": "cosmetic",
+      "expected_fields": [],
+      "expected_kinds": [],
+      "file": "product_c3_attr_reorder.html",
+      "id": "PC3",
+      "label": "extra data attribute on field nodes (attribute change)",
+      "page": "product",
+      "silent": false
+    },
+    {
+      "baseline": "pricing_baseline.html",
+      "category": "breaking",
+      "expected_fields": [
+        "monthly_price"
+      ],
+      "expected_kinds": [
+        "missing"
+      ],
+      "file": "pricing_b1_renamed_id.html",
+      "id": "RB1",
+      "label": "renamed id (monthly-price -> monthly-cost)",
+      "page": "pricing",
+      "silent": false
+    },
+    {
+      "baseline": "pricing_baseline.html",
+      "category": "breaking",
+      "expected_fields": [
+        "seats"
+      ],
+      "expected_kinds": [
+        "missing"
+      ],
+      "file": "pricing_b2_removed_field.html",
+      "id": "RB2",
+      "label": "seats field removed",
+      "page": "pricing",
+      "silent": false
+    },
+    {
+      "baseline": "pricing_baseline.html",
+      "category": "breaking",
+      "expected_fields": [
+        "seats"
+      ],
+      "expected_kinds": [
+        "type-changed"
+      ],
+      "file": "pricing_b3_type_changed.html",
+      "id": "RB3",
+      "label": "seats int replaced by the word unlimited",
+      "page": "pricing",
+      "silent": false
+    },
+    {
+      "baseline": "pricing_baseline.html",
+      "category": "breaking",
+      "expected_fields": [
+        "annual_price"
+      ],
+      "expected_kinds": [
+        "format-changed"
+      ],
+      "file": "pricing_b4_price_format.html",
+      "id": "RB4",
+      "label": "annual price format change ($290.00 -> 290,00 EUR-style)",
+      "page": "pricing",
+      "silent": false
+    },
+    {
+      "baseline": "pricing_baseline.html",
+      "category": "breaking",
+      "expected_fields": [
+        "annual_price",
+        "monthly_price"
+      ],
+      "expected_kinds": [
+        "value-changed",
+        "value-changed"
+      ],
+      "file": "pricing_b5_silent_swap.html",
+      "id": "RB5",
+      "label": "monthly and annual price values swapped in place",
+      "page": "pricing",
+      "silent": true
+    },
+    {
+      "baseline": "pricing_baseline.html",
+      "category": "breaking",
+      "expected_fields": [
+        "renewal_date"
+      ],
+      "expected_kinds": [
+        "format-changed"
+      ],
+      "file": "pricing_b6_date_locale.html",
+      "id": "RB6",
+      "label": "renewal date locale swap (ISO -> US long form)",
+      "page": "pricing",
+      "silent": false
+    },
+    {
+      "baseline": "pricing_baseline.html",
+      "category": "cosmetic",
+      "expected_fields": [],
+      "expected_kinds": [],
+      "file": "pricing_c1_whitespace.html",
+      "id": "RC1",
+      "label": "whitespace and indentation only",
+      "page": "pricing",
+      "silent": false
+    },
+    {
+      "baseline": "pricing_baseline.html",
+      "category": "cosmetic",
+      "expected_fields": [],
+      "expected_kinds": [],
+      "file": "pricing_c2_unrelated_copy.html",
+      "id": "RC2",
+      "label": "unrelated marketing copy edit",
+      "page": "pricing",
+      "silent": false
+    },
+    {
+      "baseline": "pricing_baseline.html",
+      "category": "cosmetic",
+      "expected_fields": [],
+      "expected_kinds": [],
+      "file": "pricing_c3_attr_reorder.html",
+      "id": "RC3",
+      "label": "extra data attribute on field nodes (attribute change)",
+      "page": "pricing",
+      "silent": false
+    }
+  ]
+}
